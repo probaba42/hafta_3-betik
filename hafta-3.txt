@@ -1,0 +1,57 @@
+from bilgiler import *
+sayac=0
+for i in bilgiler:
+    try:
+        print(i["status"])
+        sayac=sayac+1
+        print(sayac)
+    except:
+        pass
+        print("hata")
+
+
+
+from hafta3 import ben
+
+for i in ben:
+    if(i["cinsiyet"]=="kral"):
+        if(i["yas"]>20):
+            with open("turkmenistan", "w",encoding="utf-8") as f:
+                f.write(str(i))
+            print("yazdirildi")
+        else:
+            print("yası kücük")
+
+    else:
+        print("kral degil")
+
+
+
+ben=[
+{
+    "isim":"yankı",
+    "yas":25,
+    "dogum yeri":"gunduz",
+    "cinsiyet":"kral"
+},
+{
+    "isim":"yanki1",
+    "yas":19,
+    "dogum yeri":"gunduz2",
+    "cinsiyet":"kral"
+},
+{
+    "isim":"yanki1",
+    "yas":26,
+    "dogum yeri":"gunduz2",
+    "cinsiyet":"kral3"
+},
+{
+    "isim":"yanki1",
+    "yas":17,
+    "dogum yeri":"gunduz2",
+    "cinsiyet":"kral"
+}
+]
+
+yankı uslu
